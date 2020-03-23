@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Sign-up/Login
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="materialize.css">
+        <link rel="stylesheet" type="text/css" href="materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">  
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src = "jquery-3.3.1.js"></script>
+        <script src = "action.js"></script>  
+        <script src = "materialize.js"></script>
+        <script src = "materialize.min.js"></script>
+
+    </head>
+
+    <body>
+        <!-- <div class="cursor"></div> -->
+        <div id="box1">
+            <div id="login1">
+                <h4>Have Account?</h4>
+                <button class="btn waves-effect waves-light" type="submit" name="action" id="login_btn">Login
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+
+            <div id="Signup1">
+                <h4>Create an account</h4>
+                <button class="btn waves-effect waves-light" type="submit" name="action" id="Signup_btn">Signup</button>
+            </div>
+
+            <div id="main1">
+
+            </div>
+
+            <div id="login-form1">
+
+                <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix">mail</i>
+                          <input id="icon_prefix" type="email" class="validate">
+                          <label for="icon_prefix">E-mail id</label>
+                        </div>
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix">lock</i>
+                          <input id="icon_telephone" type="password" class="validate">
+                          <label for="icon_telephone">Password</label>
+                          <br>
+                          <button class="btn waves-effect waves-light" type="submit" name="action">Login
+                            <i class="material-icons right">send</i>
+                          </button>
+        
+                        </div>
+                      </div>
+                    </form>
+                  </div>                    
+            </div>
+
+            <div id="Signup-form1">
+
+                <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <i class="material-icons prefix">account_circle</i>
+                          <input id="icon_prefix" type="text" class="validate">
+                          <label for="icon_prefix">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <!-- <i class="material-icons prefix"></i> -->
+                          <input id="icon_telephone" type="text" class="validate">
+                          <label for="icon_telephone">Last Name</label>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix">mail</i>
+                          <input id="icon_prefix" type="email" class="validate">
+                          <label for="icon_prefix">Email</label>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">vpn_key</i>
+                            <input id="icon_telephone" type="password" class="validate">
+                            <label for="icon_telephone">password</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <!-- <i class="material-icons prefix">vpn_key</i> -->
+                          <input id="icon_prefix" type="password" class="validate">
+                          <label for="icon_prefix">Confirm Password</label>
+                        </div>  
+                      </div>
+                    </form>
+                  </div>
+                  <button class="btn waves-effect waves-light" type="submit" name="action">Signup</button>                  
+
+            </div>
+
+        </div>
+      <script>
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove',e =>{
+          cursor.setAttribute("style","top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10)+"px;")
+        })
+
+        document.addEventListener('click', () =>{
+          cursor.classList.add("expand");
+          setTimeout(()=>{
+            cursor.classList.remove("expand");
+          }, 500);
+        });
+
+      </script>  
+    </body>
+</html> 
